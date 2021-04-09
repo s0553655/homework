@@ -2,7 +2,7 @@
 #### Deadline 23.04.2021 13:00
 ---------------------
 ## Homework - Exercise #0
-1. Find team members to form groups of 3 people and come up with a team name (must be url-safe). 
+1. Find team members to form groups of 3-4 people and come up with a team name (must be url-safe).
 2. Send me the names and GitHub accounts of all members via Email/Moodle private message.
 I will set up a GitHub team within the organization and Moodle for your team.
 2. Create a repository within the organization and add a `README` file, which includes the names of members and your team name.
