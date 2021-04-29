@@ -45,10 +45,10 @@ Call `values` on each card of the hand, followed by the strategy function and in
 Create a function `isBust` that takes the `hand value` and returns `true` if is greater than 21 or `false` otherwise.
 
 #### D)
-Partially apply `determineHandValue` by taking a strategy in order to form two function - `optimisticF`, by applying `max` as the strategy and `pessimisticF` by applying `min` as the strategy. Those functions now each take the `values` of a card and produce a single value (either the higher or lower in case of aces). 
+Partially apply `determineHandValue` by taking a strategy in order to form the function - `optimisticF`, by applying `max` as the strategy and `pessimisticF` by applying `min` as the strategy. Those functions now, for all cards of the hand, produce a single value (either the higher or lower in case of aces) from the `values` of a card.
 
 ### E)
-Create a function `determineBestHandValue` which takes a hand and computes its value using `optimisticF` and if this results in a bust returns `pessimisticF` instead.
+Create a function `determineBestHandValue` which takes a hand and computes its value using `optimisticF` and if this results in a bust returns the value using `pessimisticF` instead.
 
 ## Optional Task
 Those tasks are optional and usually a lot harder than the normal tasks and just give additional, bonus points.
@@ -61,7 +61,7 @@ and in the optimistic 31, however it will never consider the actual best case - 
 
 Update `determineBestHandValue`so it also covers that case.
 
-*Hint: A way to solve this is using the flatten function does. We will learn this in future lectures.*
+*Hint: A way to solve this is using the flatten function. We will learn this in future lectures.*
 
 ## Goals
 - :star: For solving Task 1
