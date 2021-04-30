@@ -46,6 +46,10 @@ val e = d.map(x => x + "something") //Left(java.lang.RuntimeException: a grave e
 
 val both = Ior.both(new RuntimeException("not fatal"), 21) //Both(java.lang.RuntimeException: not fatal,21)
 val both1 = both.map(x => x * 2) //Both(java.lang.RuntimeException: not fatal,42)
+val both2 = both.flatMap(_ => Ior.left[Int](new RuntimeException("fatal error"))) //Left(java.lang.RuntimeException: fatal error)
+val both3 = both.flatMap(_ => Ior.right(480)) //Both(java.lang.RuntimeException: not fatal,480)
+val both4 = both.flatMap(x => Ior.both(new RuntimeException("another not fatal"), x * 3)) //Both(java.lang.RuntimeException: another not fatal,63)
+
 ```
 
 ## Task 2 Functional Sequential Collections
