@@ -1,5 +1,5 @@
 # Functional and Concurrent Programming with Scala and ZIO - SoSe 2021
-#### Deadline 21.05.2021 13:00
+#### Deadline 28.05.2021 13:00
 ---------------------
 ## Exercise 2
 
