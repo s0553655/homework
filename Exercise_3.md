@@ -67,7 +67,7 @@ In the `run` method of your ZIO Application, create a program, that generates wh
 ## Optional Task
 Those tasks are optional and usually a lot harder than the normal tasks and just give additional, bonus points.
 
-Add tests for the `whiteNoise` method using `zio-test`. (We will cover testing with ZIO soon, but you can try to learn the basics on your own, [here](https://zio.dev/docs/usecases/usecases_testing) is an example)
+Add tests for the `whiteNoise` method using `zio-test`. (We will cover testing with ZIO soon, but you can try to learn the basics on your own, [here](https://zio.dev/docs/usecases/usecases_testing) is an example) See [zio.test.TestRandom](https://zio.dev/docs/howto/test-effects#testing-random), which has a method `TestRandom.feedDoubles`.
 
 ## Goals
 - :star: For solving Task 1 A)
