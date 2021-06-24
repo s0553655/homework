@@ -166,7 +166,7 @@ Finally, we have the `Reporter`. Whenever there are news, it `proclaim`s them (o
 Build a day in AutoZion as your ZIO Program. Build in a small delay before starting the `Elder`s and start the `Reporter` last synchronously(for simplicity). Make sure to have at least 2 `Worker`s and `Elder`s and at least one of each other type.
 
 ### G)
-Make ZIO type parameters as concreate (e.g. `Has[News]` instead of `MyEnv` if only `News` is used in the work method) and concise (e.g `UIO[String]` for `ZIO[Any, Nothing, String]`) as possible.
+Make ZIO type parameters as concrete (e.g. `Has[News]` instead of `MyEnv` if only `News` is used in the work method) and concise (e.g `UIO[String]` for `ZIO[Any, Nothing, String]`) as possible.
 
 ## Optional Task
 Those tasks are optional and usually a lot harder than the normal tasks and just give additional, bonus points.
