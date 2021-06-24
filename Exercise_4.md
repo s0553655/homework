@@ -150,7 +150,7 @@ Update your `MyEnv` type alias to include all of those ZLayers.
 ### E)
 Now it's time to implement the citizens of AutoZion - the robots. Implement each as a separate class, implementing the `Robot` trait. Each runs in a separate `zio.Fiber` and they communicate with each other based on the `ZLayer`s we already defined.
 
-First we have the `Elder`s. They `publish` jobs to the `JobBoard` at specific intervals (`zio.Schedule`).
+First we have the `Elder`s. They `submit` jobs to the `JobBoard` at specific intervals (`zio.Schedule`).
 
 
 Next up, the `Worker`s. They `take` jobs from the `JobBoard`, execute them and once completed, `publish` them on the `CompletedJobsHub`. Each job takes `duration` to execute. Emulate the execution of the jobs by just sleeping for `duration` before taking the next job.
